@@ -58,7 +58,6 @@
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
     if(object ==self && [keyPath isEqualToString:@"frame"]){
-        NSLog(@"%f", self.frame.size.width);
         self.button.frame = self.bounds;
     }
     else{
@@ -70,7 +69,6 @@
 - (UIButton *)button{
     if(!_button){
         _button = [[UIButton alloc] initWithFrame:self.bounds];
-        _button.backgroundColor = [[UIColor grayColor] colorWithAlphaComponent:0.6];
     }
     return _button;
 }
