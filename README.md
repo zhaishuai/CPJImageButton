@@ -1,2 +1,6 @@
 # CPJImageButton
-按钮图片，能够自动下载图片，并且缓存图片。
+#使用方法
+```objective-c
+[self.imgBtn addTarget:self action:@selector(imageTapped) forControlEvents:UIControlEventTouchUpInside];
+```
+<p>实现点击图片响应点击事件</p>
